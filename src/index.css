@@ -1,13 +1,33 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import-normalize;
+
+:root{
+  --yellow-v: #DBC821;
+  --red-v: #CF4F47;
+  --green-v: #2C9B73;
+  --blue-v: #5377D2;
+  --black-v: #0F0F0E;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Satoshi-Variable";
+  src: local("Satoshi-Variable"), url(./assets/Satoshi-Variable.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: "Satoshi-VariableItalic";
+  src: local("Satoshi-VariableItalic"), url(./assets/Satoshi-VariableItalic.ttf) format('opentype');
+}
+body{
+  margin: 0;
+  background-color: var(--black-v);
+}
+
+.card {
+  margin: 0;
+  justify-self: center;
+  font-family: "Satoshi-Variable";
+  writing-mode: vertical-lr;
+  height: 785px;
+  width: 65px ;
+  float: right;
 }
