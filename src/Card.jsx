@@ -5,10 +5,12 @@ export default function Card({color, show, setIsShow, handleShow, i, content, ti
     
     const animatedDiv = useSpring({
         width: show ? "82%": "4.5%",
-        backgroundColor: color
+        backgroundColor: color,
+        zIndex: 5-i
     })
 
     const animatedH2 = useSpring({
+        opacity: show ? 0: 100,
         fontSize: 15,
         paddingTop: 63,
         lineHeight: 2.5,
@@ -22,4 +24,3 @@ export default function Card({color, show, setIsShow, handleShow, i, content, ti
         </animated.div>
     )
 }
-  

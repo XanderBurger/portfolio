@@ -24,14 +24,23 @@ body{
 
 .card {
   margin: 0;
+  position: sticky;
   justify-self: center;
   font-family: "Satoshi-Variable";
-  height: 785px;
+  height: 100vh;
   width: 65px ;
   float: right;
+}
+
+.card :hover{
+  cursor: pointer;
 }
 
 .card .title{
   writing-mode: vertical-lr;
   color: white;
 }
+
+.aboutMe {
+  
+} 
