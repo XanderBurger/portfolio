@@ -26,8 +26,12 @@ body{
   margin: 0;
   justify-self: center;
   font-family: "Satoshi-Variable";
-  writing-mode: vertical-lr;
   height: 785px;
   width: 65px ;
   float: right;
+}
+
+.card .title{
+  writing-mode: vertical-lr;
+  color: white;
 }
