@@ -1,11 +1,11 @@
 @import-normalize;
 
 :root{
-  --yellow-v: #DBC821;
-  --red-v: #CF4F47;
-  --green-v: #2C9B73;
-  --blue-v: #5377D2;
-  --black-v: #0F0F0E;
+  --yellow-v: #ffe928;
+  --red-v: #ff483a;
+  --green-v: #2cb482;
+  --blue-v: #416fe3;
+  --black-v: #111010;
 }
 
 @font-face {
@@ -22,14 +22,38 @@ body{
   background-color: var(--black-v);
 }
 
+h1{
+  font-size: 53px;
+  font-weight: 900;
+  line-height: 55px;
+}
+h2{
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 20px;
+}
+
+p{
+  font-weight: 400;
+  font-size: 15px;
+}
+
 .card {
   margin: 0;
-  position: sticky;
-  justify-self: center;
+  position: relative;
+  overflow-y: scroll;
+  top: 0;
+  display: grid;
   font-family: "Satoshi-Variable";
-  height: 100vh;
+  min-height: 100vh;
+  max-height: fit-content;
   width: 65px ;
   float: right;
+  justify-content: center;
+}
+
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
 }
 
 .card :hover{
@@ -37,10 +61,79 @@ body{
 }
 
 .card .title{
+  position: fixed;
   writing-mode: vertical-lr;
   color: white;
 }
 
 .aboutMe {
-  
+  display: grid;
+  grid-template-areas: 
+  "head head head"
+  "main main main";
+  width: 721px;
+  height: fit-content;
 } 
+
+.aboutMe .header .right{
+  float: right;
+}
+
+.aboutMe .header{
+  align-items: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-area: head;
+  margin-top: 0;
+}
+
+.aboutMe .body{
+  grid-area: main;
+  display: grid;
+  grid-template-areas: 
+  "tagline tagline tagline"
+  "svg svg svg"
+  "bodyText bodyText contact";
+  margin-top: 20px;
+}
+
+.aboutMe .aboutText{
+  grid-area: bodyText;
+  padding-top: 0px;
+}
+
+.aboutMe .tagLine{
+  grid-area: tagline;
+  margin-bottom: 14px;
+}
+.aboutMe .svg{
+  grid-area: svg;
+}
+
+.aboutMe .contact{
+  margin-top: 20px;
+  grid-area: contact;
+  display: grid;
+  grid-template-areas: 
+  "svg header"
+  "svg body";
+  line-height: 1.2rem;
+  width: 235px;
+}
+
+.aboutMe .contact .contactText{
+  margin-top: 0;
+  margin-left: 0;
+  grid-area: body;
+}
+.aboutMe .contact .contactHeader{
+  line-height: 15px;
+  margin-top: 0;
+  margin-bottom: 6px;
+  margin-left: 0;
+  grid-area: header;
+}
+.aboutMe .contact .contactSvg{
+  width: 20px;
+  grid-area: svg;
+}
