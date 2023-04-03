@@ -40,20 +40,21 @@ p{
 
 .card {
   margin: 0;
-  position: relative;
-  overflow-y: scroll;
+  position: sticky;
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
   top: 0;
   display: grid;
   font-family: "Satoshi-Variable";
-  min-height: 100vh;
-  max-height: fit-content;
-  width: 65px ;
+  height: 100vh;
+  overflow-y: scroll;
   float: right;
   justify-content: center;
+  
 }
 
-::-webkit-scrollbar {
-  width: 0;  /* Remove scrollbar space */
+.card::-webkit-scrollbar {
+  display: none;
 }
 
 .card :hover{
@@ -71,13 +72,10 @@ p{
   grid-template-areas: 
   "head head head"
   "main main main";
-  width: 721px;
+  width: 850px;
   height: fit-content;
 } 
 
-.aboutMe .header .right{
-  float: right;
-}
 
 .aboutMe .header{
   align-items: center;
@@ -87,24 +85,38 @@ p{
   margin-top: 0;
 }
 
+.aboutMe .header .right{
+  float: right;
+  padding-left: 83%;
+}
+
 .aboutMe .body{
   grid-area: main;
+  align-items: center;
   display: grid;
   grid-template-areas: 
-  "tagline tagline tagline"
-  "svg svg svg"
-  "bodyText bodyText contact";
+  "svg tagline tagline"
+  "svg bodyText contact";
   margin-top: 20px;
 }
 
 .aboutMe .aboutText{
   grid-area: bodyText;
   padding-top: 0px;
+  padding-left: 25px;
+  padding-right: 20px;
+  font-size: 30px;
+  
 }
 
 .aboutMe .tagLine{
   grid-area: tagline;
-  margin-bottom: 14px;
+  position: relative;
+  left: 25px;
+  top: -60px;
+  margin-bottom: 0;
+  line-height: 110px;
+  font-size: 120px;
 }
 .aboutMe .svg{
   grid-area: svg;
@@ -115,23 +127,21 @@ p{
   grid-area: contact;
   display: grid;
   grid-template-areas: 
-  "svg header"
   "svg body";
   line-height: 1.2rem;
-  width: 235px;
+  height: fit-content;
 }
 
 .aboutMe .contact .contactText{
-  margin-top: 0;
-  margin-left: 0;
+  margin-left: 5px;
   grid-area: body;
 }
 .aboutMe .contact .contactHeader{
-  line-height: 15px;
   margin-top: 0;
   margin-bottom: 6px;
-  margin-left: 0;
-  grid-area: header;
+  margin-left: 5px;
+  grid-area: body;
+  line-height: 15px;
 }
 .aboutMe .contact .contactSvg{
   width: 20px;
