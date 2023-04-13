@@ -1,0 +1,27 @@
+.card {
+    margin: 0;
+    position: sticky;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+    top: 0;
+    display: grid;
+    height: 100vh;
+    overflow-y: scroll;
+    float: right;
+    justify-content: center;
+    
+  }
+
+  .card::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .card :hover{
+    cursor: pointer;
+  }
+  
+  .card .title{
+    position: fixed;
+    writing-mode: vertical-lr;
+    color: white;
+  }

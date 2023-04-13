@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import {useSpring, animated} from "react-spring"
+import "./index.css"
 
 export default function Card({color, show, setIsShow, handleShow, i, content, tile, titleColor}) {
     

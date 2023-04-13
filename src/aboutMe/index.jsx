@@ -1,8 +1,9 @@
 import React from 'react'
 import patternSvg from "./assets/svgs/pixelPattern.svg"
 import sidebarSvg from "./assets/svgs/pixelSidebar.svg"
+import "./index.css"
 
-export default function Content() {
+export default function AboutMe() {
 
   return (
     <div className='aboutMe' style={{color: "white"}}>

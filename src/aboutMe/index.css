@@ -1,0 +1,78 @@
+.aboutMe {
+  display: grid;
+  grid-template-areas: 
+  "head head head"
+  "main main main";
+  width: 850px;
+  height: fit-content;
+} 
+
+.aboutMe .header{
+  align-items: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-area: head;
+  margin-top: 0;
+}
+
+.aboutMe .header .right{
+  text-align: right;
+}
+
+.aboutMe .body{
+  grid-area: main;
+  align-items: center;
+  display: grid;
+  grid-template-areas: 
+  "svg tagline tagline"
+  "svg bodyText contact";
+  margin-top: 20px;
+}
+
+.aboutMe .aboutText{
+  grid-area: bodyText;
+  padding-top: 0px;
+  padding-left: 25px;
+  padding-right: 20px;
+  font-size: 30px;
+  
+}
+
+.aboutMe .tagLine{
+  grid-area: tagline;
+  position: relative;
+  left: 25px;
+  top: -60px;
+  margin-bottom: 0;
+  line-height: 110px;
+  font-size: 120px;
+}
+.aboutMe .svg{
+  grid-area: svg;
+}
+
+.aboutMe .contact{
+  margin-top: 20px;
+  grid-area: contact;
+  display: grid;
+  grid-template-areas: 
+  "svg body";
+  line-height: 1.2rem;
+  height: fit-content;
+}
+
+.aboutMe .contact .contactText{
+  margin-left: 5px;
+  grid-area: body;
+}
+.aboutMe .contact .contactHeader{
+  margin-top: 0;
+  margin-bottom: 6px;
+  margin-left: 5px;
+  grid-area: body;
+  line-height: 15px;
+}
+.aboutMe .contact .contactSvg{
+  width: 20px;
+  grid-area: svg;
+}

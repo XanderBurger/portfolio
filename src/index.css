@@ -10,13 +10,14 @@
 
 @font-face {
   font-family: "Satoshi-Variable";
-  src: local("Satoshi-Variable"), url(./assets/Satoshi-Variable.ttf) format('opentype');
+  src: local("Satoshi-Variable"), url(./assets/fonts/Satoshi-Variable.ttf) format('opentype');
 }
 
 @font-face {
   font-family: "Satoshi-VariableItalic";
-  src: local("Satoshi-VariableItalic"), url(./assets/Satoshi-VariableItalic.ttf) format('opentype');
+  src: local("Satoshi-VariableItalic"), url(./assets/fonts/Satoshi-VariableItalic.ttf) format('opentype');
 }
+
 body{
   margin: 0;
   background-color: var(--black-v);
@@ -26,124 +27,17 @@ h1{
   font-size: 53px;
   font-weight: 900;
   line-height: 55px;
+  font-family: "Satoshi-Variable";
 }
 h2{
   font-size: 15px;
   font-weight: 900;
   line-height: 20px;
+  font-family: "Satoshi-Variable";
 }
 
 p{
   font-weight: 400;
   font-size: 15px;
-}
-
-.card {
-  margin: 0;
-  position: sticky;
-  -ms-overflow-style: none; 
-  scrollbar-width: none; 
-  top: 0;
-  display: grid;
   font-family: "Satoshi-Variable";
-  height: 100vh;
-  overflow-y: scroll;
-  float: right;
-  justify-content: center;
-  
-}
-
-.card::-webkit-scrollbar {
-  display: none;
-}
-
-.card :hover{
-  cursor: pointer;
-}
-
-.card .title{
-  position: fixed;
-  writing-mode: vertical-lr;
-  color: white;
-}
-
-.aboutMe {
-  display: grid;
-  grid-template-areas: 
-  "head head head"
-  "main main main";
-  width: 850px;
-  height: fit-content;
-} 
-
-
-.aboutMe .header{
-  align-items: center;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-area: head;
-  margin-top: 0;
-}
-
-.aboutMe .header .right{
-  float: right;
-  padding-left: 83%;
-}
-
-.aboutMe .body{
-  grid-area: main;
-  align-items: center;
-  display: grid;
-  grid-template-areas: 
-  "svg tagline tagline"
-  "svg bodyText contact";
-  margin-top: 20px;
-}
-
-.aboutMe .aboutText{
-  grid-area: bodyText;
-  padding-top: 0px;
-  padding-left: 25px;
-  padding-right: 20px;
-  font-size: 30px;
-  
-}
-
-.aboutMe .tagLine{
-  grid-area: tagline;
-  position: relative;
-  left: 25px;
-  top: -60px;
-  margin-bottom: 0;
-  line-height: 110px;
-  font-size: 120px;
-}
-.aboutMe .svg{
-  grid-area: svg;
-}
-
-.aboutMe .contact{
-  margin-top: 20px;
-  grid-area: contact;
-  display: grid;
-  grid-template-areas: 
-  "svg body";
-  line-height: 1.2rem;
-  height: fit-content;
-}
-
-.aboutMe .contact .contactText{
-  margin-left: 5px;
-  grid-area: body;
-}
-.aboutMe .contact .contactHeader{
-  margin-top: 0;
-  margin-bottom: 6px;
-  margin-left: 5px;
-  grid-area: body;
-  line-height: 15px;
-}
-.aboutMe .contact .contactSvg{
-  width: 20px;
-  grid-area: svg;
 }

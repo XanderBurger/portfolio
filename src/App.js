@@ -1,8 +1,8 @@
-import Card from "./Card";
-import Content from "./Content";
+import Card from "./sideCard/index";
+import AboutMe from "./aboutMe/index";
 import {useEffect, useRef, useState} from "react"
 
-const projectContent = <Content/>
+const projectContent = <AboutMe/>
 
 function App() {
   const [isShow, setIsShow] = useState([false, false, false, false, true])
