@@ -57,11 +57,13 @@
 }
 
 .aboutMe .contact .contactText{
+  font-weight: 100;
   margin-left: 5px;
   line-height: 22px;
   grid-area: body;
 }
 .aboutMe .contact .contactHeader{
+  font-weight: 400;
   margin-top: 0;
   margin-bottom: 6px;
   margin-left: 5px;

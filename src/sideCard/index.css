@@ -34,7 +34,23 @@
   .card .fixedHeader{
     position: fixed;
     font-weight: 900;
-    padding-left: 1.5%;
+    padding-left: 4.5%;
     width: 300px;
 
+  }
+
+  .arrowContainer{
+    font-size: 40px;
+  }
+
+  .arrowContainer .left{
+    position: fixed;
+    bottom: 35px;
+    left: 35px;
+  }
+
+  .arrowContainer .right{
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
   }

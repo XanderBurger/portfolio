@@ -64,11 +64,13 @@ export default function Card({color, show, setIsShow, handleShow, i, content, ti
     })
 
     return (
-        <animated.div className='card' style={animatedDiv} >
-            <animated.h2 className='title' style={animatedH2} onClick={() => (setIsShow(handleShow(i)))} >{tile}</animated.h2>
+        <>
+        <animated.div className='card' style={animatedDiv} onClick={() => (setIsShow(handleShow(i)))}>
+            <animated.h2 className='title' style={animatedH2} >{tile}</animated.h2>
             <animated.h2 className='fixedHeader' style= {animatedSubHead}>XANDER BURGER<br/>GRAPHIC DESIGN–PROGRAMING</animated.h2>
-            {show && content}
-            {(screenSize < breakpoint) && show && arrow}   
+            {show && content} 
         </animated.div>
+        {(screenSize < breakpoint) && show && arrow}  
+        </>
     )
 }
