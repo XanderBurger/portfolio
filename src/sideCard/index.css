@@ -1,6 +1,5 @@
 .card {
     margin: 0;
-    position: sticky;
     -ms-overflow-style: none; 
     scrollbar-width: none; 
     top: 0;
@@ -8,10 +7,13 @@
     height: 100vh;
     overflow-y: scroll;
     float: right;
-    justify-content: center;
+    /* justify-content: center; */
+    box-sizing: border-box;
+    /* border-left: 2px solid; */
     
   }
 
+  
   .card::-webkit-scrollbar {
     display: none;
   }
@@ -22,6 +24,18 @@
   
   .card .title{
     position: fixed;
-    writing-mode: vertical-lr;
-    color: white;
+    padding-left: .75%;
+    writing-mode: vertical-Lr;
+    font-size: 14px;
+    padding-top: 90px;
+    line-height: 0;
+    color: "white";
+  }
+
+  .card .fixedHeader{
+    position: fixed;
+    font-weight: 900;
+    padding-left: 1.5%;
+    width: 300px;
+
   }

@@ -1,38 +1,33 @@
 .aboutMe {
   display: grid;
   grid-template-areas: 
-  "head head head"
-  "main main main";
-  width: 850px;
+  "head head"
+  "main main";
+  width: 65%;
   height: fit-content;
 } 
 
 .aboutMe .header{
-  align-items: center;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-area: head;
-  margin-top: 0;
+  position: absolute;
+  left: 5%;
+  top: 15px;
+  z-index: 2;
 }
 
-.aboutMe .header .right{
-  text-align: right;
-}
 
 .aboutMe .body{
+  padding-left: 65px;
   grid-area: main;
-  align-items: center;
   display: grid;
   grid-template-areas: 
-  "svg tagline tagline"
-  "svg bodyText contact";
-  margin-top: 20px;
+  "bodyText" 
+  "contact";
+  margin-top: 50px;
 }
 
 .aboutMe .aboutText{
   grid-area: bodyText;
   padding-top: 0px;
-  padding-left: 25px;
   padding-right: 20px;
   font-size: 30px;
   
@@ -56,13 +51,14 @@
   grid-area: contact;
   display: grid;
   grid-template-areas: 
-  "svg body";
+  "body";
   line-height: 1.2rem;
   height: fit-content;
 }
 
 .aboutMe .contact .contactText{
   margin-left: 5px;
+  line-height: 22px;
   grid-area: body;
 }
 .aboutMe .contact .contactHeader{
@@ -70,9 +66,18 @@
   margin-bottom: 6px;
   margin-left: 5px;
   grid-area: body;
-  line-height: 15px;
+  line-height: 12px;
 }
-.aboutMe .contact .contactSvg{
-  width: 20px;
-  grid-area: svg;
+
+.fixedHeader{
+}
+
+@media screen and (max-width: 700px){
+  .aboutMe {
+    width: 95%;
+    
+  } 
+  .aboutMe .body{
+    padding-left: 10%;
+  }
 }
