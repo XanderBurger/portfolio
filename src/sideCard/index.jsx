@@ -1,21 +1,59 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import {useSpring, animated} from "react-spring"
+import Arrow from './arrow'
 import "./index.css"
 
 export default function Card({color, show, setIsShow, handleShow, i, content, tile, titleColor}) {
     
     const[showContent, setShowContent] = useState(false)
 
-    const animatedDiv = useSpring({
-      //  config: {tension: 180, friction: 23},
-        width: show ? "88%": "3%",
-        backgroundColor: color,
-       // borderColor: color,
-        onRest: () => setShowContent(!showContent)
-    })
+    const[showArrow, setShowArrow] = useState(false)
 
+    const arrow = <Arrow setIsShow = {setIsShow} handleShow ={handleShow} i={i}/>
+
+      // State to hold the breakpoint value
+    const [breakpoint, setBreakpoint] = useState(800);
+     // State to hold the current screen size
+    const [screenSize, setScreenSize] = useState(window.innerWidth);
+
+     // Event listener to update screen size state when window is resized
+    const handleResize = () => {
+        setScreenSize(window.innerWidth);
+    };
+
+    useEffect(() => {
+        // Add event listener to window resize event
+        window.addEventListener('resize', handleResize);
+        // Remove event listener on component unmount
+        return () => {
+        window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+  // Render different components based on screen size state
+  //return screenSize < breakpoint ? <MobileComponent /> : <DesktopComponent />;
+
+    function handleScreenSizeStyle(screenSize){
+        if(screenSize > breakpoint){
+            return{
+                width: show ? "88%": "3%",
+                backgroundColor: color,
+                onRest: () => setShowContent(!showContent)
+            }
+        }else{
+            return{
+                width: show ? "100%": "0%",
+                backgroundColor: color,
+                onRest: () => setShowContent(!showContent)
+            }
+        }
+    }
+    
+    const animatedDiv = useSpring(handleScreenSizeStyle(screenSize))
+    
     const animatedH2 = useSpring({
         fontWeight: show ? 900: 300,
+        opacity: !show && (screenSize < breakpoint) ? 0: 100,
         color: titleColor
     })
 
@@ -26,10 +64,11 @@ export default function Card({color, show, setIsShow, handleShow, i, content, ti
     })
 
     return (
-        <animated.div className='card' style={animatedDiv} onClick={() => (setIsShow(handleShow(i)))}>
-            <animated.h2 className='title' style={animatedH2}>{tile}</animated.h2>
+        <animated.div className='card' style={animatedDiv} >
+            <animated.h2 className='title' style={animatedH2} onClick={() => (setIsShow(handleShow(i)))} >{tile}</animated.h2>
             <animated.h2 className='fixedHeader' style= {animatedSubHead}>XANDER BURGER<br/>GRAPHIC DESIGN–PROGRAMING</animated.h2>
-            {show && content}   
+            {show && content}
+            {(screenSize < breakpoint) && show && arrow}   
         </animated.div>
     )
 }
