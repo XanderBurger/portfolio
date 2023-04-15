@@ -70,7 +70,7 @@ export default function Card({color, show, setIsShow, handleShow, i, content, ti
             <animated.h2 className='fixedHeader' style= {animatedSubHead}>XANDER BURGER<br/>GRAPHIC DESIGN–PROGRAMING</animated.h2>
             {show && content} 
         </animated.div>
-        {(screenSize < breakpoint) && show && arrow}  
+        {(screenSize < breakpoint) && show && arrow}
         </>
     )
 }

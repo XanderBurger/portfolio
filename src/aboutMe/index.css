@@ -3,7 +3,7 @@
   grid-template-areas: 
   "head"
   "main";
-  width: 700px;
+  width: 100%;
   height: fit-content;
 } 
 
@@ -14,33 +14,26 @@
   z-index: 2;
 }
 
-
 .aboutMe .body{
-  padding-left: 65px;
+  padding-left: 40px;
   grid-area: main;
   display: grid;
   grid-template-areas: 
+  "sketch"
   "bodyText" 
   "contact";
-  margin-top: 50px;
+  width: 100%;
 }
 
 .aboutMe .aboutText{
   grid-area: bodyText;
-  margin-bottom: 0;
+  margin-bottom: 0px;
+  margin-top: 15px;
   padding-top: 0px;
   font-size: 30px;
+  width: 710px;
 }
 
-.aboutMe .tagLine{
-  grid-area: tagline;
-  position: relative;
-  left: 25px;
-  top: -60px;
-  margin-bottom: 0;
-  line-height: 110px;
-  font-size: 120px;
-}
 
 .aboutMe .contact{
   margin-top: 20px;
@@ -54,7 +47,6 @@
 
 .aboutMe .contact .contactText{
   font-weight: 100;
-  margin-left: 5px;
   line-height: 22px;
   grid-area: body;
 }
@@ -62,25 +54,34 @@
   font-weight: 580;
   margin-top: 0;
   margin-bottom: 6px;
-  margin-left: 5px;
   grid-area: body;
   line-height: 12px;
 }
 
-@media screen and (min-width: 500px) and (max-width: 700px){
-  .aboutMe {
+.sketchContainer{
+  grid-area: sketch;
+  padding-top: 60px;
+  width: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+
+@media screen and (min-width: 550px) and (max-width: 830px){
+  .aboutMe .aboutText {
     width: 500px;
   } 
   .aboutMe .body{
-    padding-left: 12%;
-  }
+    padding-left: 35px;
+  } 
+
 }
 
-@media screen and (max-width: 499px){
-  .aboutMe {
-    width: 350px;
+@media screen and (max-width: 549px){
+  .aboutMe .aboutText {
+    width: 320px;
   } 
   .aboutMe .body{
-    padding-left: 12%;
-  }
+    padding-left: 30px;
+  } 
 }

@@ -25,7 +25,7 @@ function App() {
    
     <div className="App">
       <Card color={green} show={isShow[0]} setIsShow={setIsShow} handleShow = {handleShow} i={0} content={projectContent} tile={"PROJECT 4"} titleColor={black}/>
-      <Card color={blue} show={isShow[1]} setIsShow={setIsShow} handleShow = {handleShow} i={1} content={projectContent} tile={"PROJECT 3"} titleColor={black}/>
+      <Card color={blue} show={isShow[1]} setIsShow={setIsShow} handleShow = {handleShow} i={1} content={projectContent} tile={"SEVILLETA–DIGITIZED LANDSCAPE"} titleColor={black}/>
       <Card color={yellow} show={isShow[2]} setIsShow={setIsShow} handleShow = {handleShow} i={2} content={projectContent} tile={"PROJECT 2"} titleColor={black}/>
       <Card color={red} show={isShow[3]} setIsShow={setIsShow} handleShow = {handleShow} i={3} content={projectContent} tile={"PROJECT 1"} titleColor={black}/>
       <Card color={cream} show={isShow[4]} setIsShow={setIsShow} handleShow = {handleShow} i={4} content={projectContent} tile={"ABOUT ME"}  titleColor={black}/>
