@@ -1,7 +1,6 @@
 import Card from "./sideCard/index";
 import AboutMe from "./aboutMe/index";
 import {useEffect, useRef, useState} from "react"
-import { click } from "@testing-library/user-event/dist/click";
 
 const projectContent = <AboutMe/>
 
@@ -19,9 +18,7 @@ function App() {
   function handleShow(i){
      const newList = [false, false, false, false]
      newList[i] = true
-     console.log(i)
      return newList
-    
    }
 
   return (

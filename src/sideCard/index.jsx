@@ -52,7 +52,7 @@ export default function Card({color, show, setIsShow, handleShow, i, content, ti
     const animatedDiv = useSpring(handleScreenSizeStyle(screenSize))
     
     const animatedH2 = useSpring({
-        fontWeight: show ? 900: 300,
+        fontWeight: show ? 800: 300,
         opacity: !show && (screenSize < breakpoint) ? 0: 100,
         color: titleColor
     })

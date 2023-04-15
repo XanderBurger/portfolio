@@ -1,9 +1,9 @@
 .aboutMe {
   display: grid;
   grid-template-areas: 
-  "head head"
-  "main main";
-  width: 65%;
+  "head"
+  "main";
+  width: 700px;
   height: fit-content;
 } 
 
@@ -27,10 +27,9 @@
 
 .aboutMe .aboutText{
   grid-area: bodyText;
+  margin-bottom: 0;
   padding-top: 0px;
-  padding-right: 20px;
   font-size: 30px;
-  
 }
 
 .aboutMe .tagLine{
@@ -41,9 +40,6 @@
   margin-bottom: 0;
   line-height: 110px;
   font-size: 120px;
-}
-.aboutMe .svg{
-  grid-area: svg;
 }
 
 .aboutMe .contact{
@@ -63,7 +59,7 @@
   grid-area: body;
 }
 .aboutMe .contact .contactHeader{
-  font-weight: 400;
+  font-weight: 580;
   margin-top: 0;
   margin-bottom: 6px;
   margin-left: 5px;
@@ -71,15 +67,20 @@
   line-height: 12px;
 }
 
-.fixedHeader{
-}
-
-@media screen and (max-width: 700px){
+@media screen and (min-width: 500px) and (max-width: 700px){
   .aboutMe {
-    width: 95%;
-    
+    width: 500px;
   } 
   .aboutMe .body{
-    padding-left: 10%;
+    padding-left: 12%;
+  }
+}
+
+@media screen and (max-width: 499px){
+  .aboutMe {
+    width: 350px;
+  } 
+  .aboutMe .body{
+    padding-left: 12%;
   }
 }

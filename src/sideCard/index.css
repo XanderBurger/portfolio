@@ -29,18 +29,19 @@
     padding-top: 90px;
     line-height: 0;
     color: "white";
+    height: 300px;
   }
 
   .card .fixedHeader{
     position: fixed;
-    font-weight: 900;
-    padding-left: 4.5%;
+    font-weight: 800;
+    padding-left: 15px;
     width: 300px;
-
   }
 
   .arrowContainer{
     font-size: 40px;
+    z-index: 2;
   }
 
   .arrowContainer .left{

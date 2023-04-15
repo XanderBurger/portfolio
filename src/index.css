@@ -25,19 +25,19 @@ body{
 
 h1{
   font-size: 53px;
-  font-weight: 900;
+  font-weight: 800;
   line-height: 55px;
   font-family: "Satoshi-Variable";
 }
 h2{
   font-size: 15px;
-  font-weight: 900;
+  font-weight: 800;
   line-height: 20px;
   font-family: "Satoshi-Variable";
 }
 
 p{
-  font-weight: 400;
+  font-weight: 350;
   font-size: 15px;
   font-family: "Satoshi-Variable";
 }
