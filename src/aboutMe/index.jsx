@@ -15,7 +15,7 @@ export default function AboutMe() {
             <Sketch className="sketch" backgroundColor = {"#FAE4C4"} frameRate = {15}/>
         </div>
             <p className="aboutText">
-            Currently studying Graphic Design and Computer Science at Montana State University. My work if focused on the intersection between design and code. 
+            Currently studying Graphic Design and Computer Science at Montana State University. My work is focused on the intersection between design and code. 
             </p>
             <div className='contact'>
                 <h2 className='contactHeader'>CONTACT ME</h2>
