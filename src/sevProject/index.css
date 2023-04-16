@@ -1,0 +1,39 @@
+.sevBody{
+    padding: 65px;
+    display: grid;
+    width: 100%;
+    grid-template-areas: 
+    "introText"
+    "mainPhoto"
+    "sketches"
+    "midText"
+    "equipmentPhotos";
+}
+
+.sevBody .introText{
+    grid-area: introText;
+    font-size: 30px;
+    width: 700px;
+}
+
+.sevBody .finishedImage{
+    grid-area: mainPhoto;
+}
+
+.sevBody .finishedImage img{
+    width: 85%;
+}
+
+.sevBody .sketches > img{
+    width: 350px;
+}
+
+.sevBody .landscapeImages> img{
+    height:300px;
+}
+
+.sevBody .midText{
+    width: 70%;
+    font-weight: 400;
+    font-size: 20px;
+}
