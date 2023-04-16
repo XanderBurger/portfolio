@@ -5,7 +5,9 @@ import "./index.css"
 
 export default function Card({color, show, setIsShow, handleShow, i, content, tile, titleColor}) {
     
-    const[showContent, setShowContent] = useState(false)
+   
+
+    const[showContent, setShowContent] = useState(show)
 
     const[showArrow, setShowArrow] = useState(false)
 
@@ -38,13 +40,13 @@ export default function Card({color, show, setIsShow, handleShow, i, content, ti
             return{
                 width: show ? "88%": "3%",
                 backgroundColor: color,
-                onRest: () => setShowContent(!showContent)
+                onRest: () => setShowContent(show ? true: false)
             }
         }else{
             return{
                 width: show ? "100%": "0%",
                 backgroundColor: color,
-                onRest: () => setShowContent(!showContent)
+                onRest: () => setShowContent(show ? true: false)
             }
         }
     }
@@ -68,7 +70,7 @@ export default function Card({color, show, setIsShow, handleShow, i, content, ti
         <animated.div className='card' style={animatedDiv} onClick={() => (setIsShow(handleShow(i)))}>
             <animated.h2 className='title' style={animatedH2} >{tile}</animated.h2>
             <animated.h2 className='fixedHeader' style= {animatedSubHead}>XANDER BURGER<br/>GRAPHIC DESIGN–PROGRAMING</animated.h2>
-            {show && content} 
+            {showContent && show && content} 
         </animated.div>
         {(screenSize < breakpoint) && show && arrow}
         </>

@@ -26,11 +26,9 @@
     color: "white";
     height: 300px;
     z-index: 3;
-  }
-
-  .card .title :hover{
     cursor: pointer;
   }
+
 
   .card .fixedHeader{
     position: fixed;
@@ -43,9 +41,6 @@
   .arrowContainer{
     font-size: 40px;
     z-index: 2;
-  }
-
-  .arrowContainer :hover{
     cursor: pointer;
   }
 

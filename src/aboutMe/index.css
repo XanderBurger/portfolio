@@ -20,7 +20,7 @@
   display: grid;
   grid-template-areas: 
   "sketch"
-  "bodyText" 
+  "bodyText"
   "contact";
   width: 100%;
 }
@@ -31,12 +31,13 @@
   margin-top: 15px;
   padding-top: 0px;
   font-size: 30px;
-  width: 710px;
+  width: 60%;
 }
 
 
 .aboutMe .contact{
   margin-top: 20px;
+  width: 300px;
   grid-area: contact;
   display: grid;
   grid-template-areas: 
@@ -60,16 +61,19 @@
 
 .sketchContainer{
   grid-area: sketch;
-  padding-top: 60px;
-  width: 100%;
+  position: relative;
+  left: -100px;
+  /* padding-top: 60px; */
+  width: 200%;
   overflow: hidden;
   z-index: 0;
+  cursor: pointer;
 }
 
 
-@media screen and (min-width: 550px) and (max-width: 830px){
+@media screen and (min-width: 550px) and (max-width: 900px){
   .aboutMe .aboutText {
-    width: 500px;
+    width: 70%;
   } 
   .aboutMe .body{
     padding-left: 35px;
@@ -79,7 +83,7 @@
 
 @media screen and (max-width: 549px){
   .aboutMe .aboutText {
-    width: 320px;
+    width: 90%;
   } 
   .aboutMe .body{
     padding-left: 30px;

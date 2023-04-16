@@ -6,8 +6,8 @@ export default function Sketch({backgroundColor, frameRate}){
     
     function drawing(p5) {
     
-        const width = 1400
-        const height = 400
+        const width = 1800
+        const height = 590
         const grid = createGrid(width/10, height/10)
     
         
@@ -216,7 +216,6 @@ export default function Sketch({backgroundColor, frameRate}){
         }
         
         p5.mouseReleased = () => {
-            console.log(Math.round(p5.mouseX/10 -1), Math.round(p5.mouseY/10 -1 ))
             setGridCell(Math.round(p5.mouseX/10 -1), Math.round(p5.mouseY/10 -1 ), 1)
             ruleNum = (1+ ruleNum)%3
         }

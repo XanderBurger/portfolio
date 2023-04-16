@@ -12,7 +12,10 @@ import {lazy} from "react"
 
 //const mainPhoto = lazy(() => import("./assets/SevProjectCorrected70.png"))
 
-export default function SevProject() {
+export default function SevProject({canLoad}) {
+    
+    console.log(canLoad)
+
   return (
     <div className="sevBody">
         <p className="introText">
