@@ -1,9 +1,12 @@
 import Card from "./sideCard/index";
 import AboutMe from "./aboutMe/index";
 import SevProject from "./sevProject/index";
-import {useEffect, useRef, useState} from "react"
+import {lazy, useEffect, useRef, useState} from "react"
+
+
 
 const aboutMe = <AboutMe/>
+//const sevProject = lazy(() => import("./sevProject/index"))
 const sevProject = <SevProject/>
 
 function App() {

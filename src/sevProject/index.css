@@ -18,18 +18,29 @@
 
 .sevBody .finishedImage{
     grid-area: mainPhoto;
+   
+
 }
 
 .sevBody .finishedImage img{
-    width: 85%;
+    width: 850px;
+    filter: drop-shadow(0.25rem 0.25rem 0.5rem #6d6d6d);
+}
+
+.sevBody .sketches{
+    display: grid;
+    width: 1000px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 330px) );
 }
 
 .sevBody .sketches > img{
-    width: 350px;
+    width: 330px;
+    filter: drop-shadow(0.25rem 0.25rem 0.5rem #6d6d6d);
 }
 
 .sevBody .landscapeImages> img{
     height:300px;
+    filter: drop-shadow(0.25rem 0.25rem 0.5rem #6d6d6d);
 }
 
 .sevBody .midText{
@@ -37,3 +48,30 @@
     font-weight: 400;
     font-size: 20px;
 }
+
+
+@media screen and (min-width: 550px) and (max-width: 1000px){
+    .sevBody .finishedImage img{
+        width: 600px;
+    } 
+    .sevBody{
+        padding: 5%;
+    }
+
+    .sevBody .sketches{
+        width: 700px;
+    }
+}
+  @media screen and (max-width: 549px){
+    .sevBody .finishedImage img{
+        width: 330px;
+    } 
+
+    .sevBody{
+        padding: 4.5%;
+    }
+    .sevBody .sketches{
+        width: 330px;
+    }
+}
+  
