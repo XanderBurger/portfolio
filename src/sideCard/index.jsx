@@ -5,8 +5,6 @@ import "./index.css"
 
 export default function Card({color, show, setIsShow, handleShow, i, content, tile, titleColor}) {
     
-
-
     const[showContent, setShowContent] = useState(show)
 
     const arrow = <Arrow setIsShow = {setIsShow} handleShow ={handleShow} i={i}/>
