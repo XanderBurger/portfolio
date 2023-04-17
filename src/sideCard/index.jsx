@@ -5,17 +5,13 @@ import "./index.css"
 
 export default function Card({color, show, setIsShow, handleShow, i, content, tile, titleColor}) {
     
-   
+
 
     const[showContent, setShowContent] = useState(show)
 
-    const[showArrow, setShowArrow] = useState(false)
-
     const arrow = <Arrow setIsShow = {setIsShow} handleShow ={handleShow} i={i}/>
 
-      // State to hold the breakpoint value
-    const [breakpoint, setBreakpoint] = useState(800);
-     // State to hold the current screen size
+    const breakpoint = 800
     const [screenSize, setScreenSize] = useState(window.innerWidth);
 
      // Event listener to update screen size state when window is resized
@@ -31,9 +27,6 @@ export default function Card({color, show, setIsShow, handleShow, i, content, ti
         window.removeEventListener('resize', handleResize);
         };
     }, []);
-
-  // Render different components based on screen size state
-  //return screenSize < breakpoint ? <MobileComponent /> : <DesktopComponent />;
 
     function handleScreenSizeStyle(screenSize){
         if(screenSize > breakpoint){

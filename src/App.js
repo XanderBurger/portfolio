@@ -1,7 +1,7 @@
 import Card from "./sideCard/index";
 import AboutMe from "./aboutMe/index";
 import SevProject from "./sevProject/index";
-import {lazy, useEffect, useRef, useState} from "react"
+import {useState} from "react"
 
 
 

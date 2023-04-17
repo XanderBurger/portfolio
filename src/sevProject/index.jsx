@@ -7,8 +7,6 @@ import sketch3 from "./assets/sevSketch3.png"
 import equipment1 from "./assets/PXL_20210615_163539239.jpg"
 import equipment2 from "./assets/PXL_20210615_170914779.jpg"
 import closeUp from "./assets/PXL_20210801_011300542.jpg"
-import {lazy} from "react"
-
 
 //const mainPhoto = lazy(() => import("./assets/SevProjectCorrected70.png"))
 
