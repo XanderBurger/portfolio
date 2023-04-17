@@ -34,7 +34,6 @@
   width: 60%;
 }
 
-
 .aboutMe .contact{
   margin-top: 20px;
   width: 300px;
@@ -69,7 +68,6 @@
   z-index: 0;
   cursor: pointer;
 }
-
 
 @media screen and (min-width: 550px) and (max-width: 900px){
   .aboutMe .aboutText {

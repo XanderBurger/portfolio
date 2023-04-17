@@ -7,7 +7,6 @@ export default function AboutMe() {
 
   return (
     <>
-    
     <div className='aboutMe' style={{color: black}}>
         
         <div className='body'>
@@ -18,13 +17,13 @@ export default function AboutMe() {
             Currently studying Graphic Design and Computer Science at Montana State University. My work is focused on the intersection between design and code. 
             </p>
             <div className='contact'>
-                <h2 className='contactHeader'>CONTACT ME</h2>
+                {/* <h2 className='contactHeader'>CONTACT ME</h2>
                 <p className='contactText'>
                      xanderbdesign@gmail.com
                     <br/> (406) 890-1841
-                    {/* <br/> @XanderBurgerDesign */}
-                </p>
+                </p> */}
             </div>
+            <a className='sketchLink' href="https://editor.p5js.org/XanderBurger/sketches/w5qt_34wg" target="_blank"><p>about this algorithm</p></a>
         </div>
     </div>
     <div style={{height: "150px"}}></div>
