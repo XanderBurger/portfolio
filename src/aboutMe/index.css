@@ -1,37 +1,30 @@
 .aboutMe {
   display: grid;
   grid-template-areas: 
-  "head"
+  "header"
   "main";
   width: 100%;
   height: fit-content;
+  padding: 45px;
+  padding-top: 35px;
 } 
 
-.aboutMe .header{
-  position: absolute;
-  left: 5%;
-  top: 15px;
-  z-index: 2;
-}
-
 .aboutMe .body{
-  padding-left: 40px;
   grid-area: main;
   display: grid;
   grid-template-areas: 
   "sketch"
   "bodyText"
+  "link"
   "contact";
   width: 100%;
 }
 
 .aboutMe .aboutText{
-  grid-area: bodyText;
-  margin-bottom: 0px;
-  margin-top: 15px;
-  padding-top: 0px;
-  font-size: 30px;
-  width: 60%;
+  font-size: 24px;
+  font-weight: 500;
+  width: 50%;
+  margin-bottom: 10px;
 }
 
 .aboutMe .contact{
@@ -49,6 +42,8 @@
   font-weight: 100;
   line-height: 22px;
   grid-area: body;
+  margin-bottom: 0;
+  padding: 0;
 }
 .aboutMe .contact .contactHeader{
   font-weight: 580;
@@ -62,19 +57,24 @@
   grid-area: sketch;
   position: relative;
   left: -100px;
-  /* padding-top: 60px; */
+  margin-top: 5px;
   width: 200%;
   overflow: hidden;
   z-index: 0;
   cursor: pointer;
+}
+.sketchLink{
+  line-height: 10px;
+  grid-area: link;
+  width: 130px;
 }
 
 @media screen and (min-width: 550px) and (max-width: 900px){
   .aboutMe .aboutText {
     width: 70%;
   } 
-  .aboutMe .body{
-    padding-left: 35px;
+  .aboutMe{
+    padding: 5%;
   } 
 
 }
@@ -83,7 +83,7 @@
   .aboutMe .aboutText {
     width: 90%;
   } 
-  .aboutMe .body{
-    padding-left: 30px;
+  .aboutMe{
+    padding: 4%;
   } 
 }

@@ -7,7 +7,7 @@ export default function Sketch({backgroundColor, frameRate}){
     function drawing(p5) {
     
         const width = 1800
-        const height = 590
+        const height = 500
         const grid = createGrid(width/10, height/10)
     
         

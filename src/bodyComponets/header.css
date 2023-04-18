@@ -1,0 +1,25 @@
+.header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 550px) );
+    align-items:first baseline;
+}
+
+.header .title .subhead{
+    opacity: 100%;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+.header .title h1{
+    margin-bottom: 20px;
+    position: relative;
+    top: 10px
+}
+
+.header .introText{
+    font-size: 24px;
+    font-weight: 500;
+    width: 100%;
+}

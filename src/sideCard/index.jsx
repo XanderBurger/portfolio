@@ -26,7 +26,7 @@ export default function Card({color, show, setIsShow, handleShow, i, content, ti
         };
     }, []);
 
-    function handleScreenSizeStyle(screenSize){
+    function handleDivScreenSizeStyle(screenSize){
         if(screenSize > breakpoint){
             return{
                 width: show ? "88%": "3%",
@@ -41,14 +41,24 @@ export default function Card({color, show, setIsShow, handleShow, i, content, ti
             }
         }
     }
+
+    function handleH2ScreenSizeStyle(screenSize){
+        if(screenSize > breakpoint){
+            return{
+                opacity: show ? 0: 100,
+                color: titleColor
+            }
+        }else{
+            return{
+                opacity:0,
+                color: titleColor
+            }
+        }
+    }
     
-    const animatedDiv = useSpring(handleScreenSizeStyle(screenSize))
+    const animatedDiv = useSpring(handleDivScreenSizeStyle(screenSize))
     
-    const animatedH2 = useSpring({
-        fontWeight: show ? 800: 300,
-        opacity: !show && (screenSize < breakpoint) ? 100: 0,
-        color: titleColor
-    })
+    const animatedH2 = useSpring(handleH2ScreenSizeStyle(screenSize))
 
     const animatedSubHead = useSpring({
         config: {duration: 0},
@@ -59,7 +69,7 @@ export default function Card({color, show, setIsShow, handleShow, i, content, ti
     return (
         <>
         <animated.div className='card' style={animatedDiv} onClick={() => (setIsShow(handleShow(i)))}>
-            <animated.h2 className='title' style={animatedH2} >{tile}</animated.h2>
+            <animated.h2 className='cardTitle' style={animatedH2} >{tile}</animated.h2>
             {/* <animated.h2 className='fixedHeader' style= {animatedSubHead}>XANDER BURGER<br/>GRAPHIC DESIGN–PROGRAMING</animated.h2> */}
             {showContent && show && content} 
         </animated.div>
