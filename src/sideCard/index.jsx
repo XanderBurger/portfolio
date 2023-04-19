@@ -50,7 +50,7 @@ export default function Card({color, show, setIsShow, handleShow, i, content, ti
             }
         }else{
             return{
-                opacity:0,
+                opacity: 0,
                 color: titleColor
             }
         }
@@ -60,17 +60,11 @@ export default function Card({color, show, setIsShow, handleShow, i, content, ti
     
     const animatedH2 = useSpring(handleH2ScreenSizeStyle(screenSize))
 
-    const animatedSubHead = useSpring({
-        config: {duration: 0},
-        opacity: show ? 100: 0,
-        color: titleColor
-    })
 
     return (
         <>
         <animated.div className='card' style={animatedDiv} onClick={() => (setIsShow(handleShow(i)))}>
             <animated.h2 className='cardTitle' style={animatedH2} >{tile}</animated.h2>
-            {/* <animated.h2 className='fixedHeader' style= {animatedSubHead}>XANDER BURGER<br/>GRAPHIC DESIGN–PROGRAMING</animated.h2> */}
             {showContent && show && content} 
         </animated.div>
         {(screenSize < breakpoint) && show && arrow}
