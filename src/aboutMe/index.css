@@ -1,7 +1,6 @@
 .aboutMe {
   display: grid;
   grid-template-areas: 
-  "header"
   "main";
   width: 100%;
   height: fit-content;
@@ -25,6 +24,11 @@
   font-weight: 500;
   width: 50%;
   margin-bottom: 10px;
+}
+.aboutMe .footer{
+  position: fixed;
+  font-weight: 500;
+  bottom: 55px;
 }
 
 .aboutMe .contact{
@@ -55,10 +59,11 @@
 
 .sketchContainer{
   grid-area: sketch;
-  position: relative;
-  left: -100px;
+  position: fixed;
+  left: 0;
+  top: 0;
   margin-top: 5px;
-  width: 200%;
+  width: 88%;
   overflow: hidden;
   z-index: 0;
   cursor: pointer;
@@ -69,10 +74,13 @@
   width: 130px;
 }
 
-@media screen and (min-width: 550px) and (max-width: 900px){
+@media screen and (min-width: 550px) and (max-width: 750px){
   .aboutMe .aboutText {
     width: 70%;
   } 
+  .sketchContainer{
+    width: 100%;
+  }
   .aboutMe{
     padding: 5%;
   } 
@@ -83,6 +91,12 @@
   .aboutMe .aboutText {
     width: 90%;
   } 
+  .sketchContainer{
+    width: 100%;
+  }
+  .aboutMe .footer{
+    font-size: 35px;
+  }
   .aboutMe{
     padding: 4%;
   } 
