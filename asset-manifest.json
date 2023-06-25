@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/XanderBurger/portfolio.git/static/css/main.bf44ce49.css",
-    "main.js": "/XanderBurger/portfolio.git/static/js/main.0590523c.js",
-    "static/media/SevProjectCorrected70.png": "/XanderBurger/portfolio.git/static/media/SevProjectCorrected70.f691e858fdd4ce82de5d.png",
-    "static/media/sevSketch3.png": "/XanderBurger/portfolio.git/static/media/sevSketch3.61711727dcc31fa54158.png",
-    "static/media/sevSketch1.png": "/XanderBurger/portfolio.git/static/media/sevSketch1.a939a688dd3d322c3270.png",
-    "static/media/sevSketch2.png": "/XanderBurger/portfolio.git/static/media/sevSketch2.d05f1fb93e498c800ed9.png",
-    "static/media/PXL_20210615_163539239.jpg": "/XanderBurger/portfolio.git/static/media/PXL_20210615_163539239.3a79937d9135e3b35437.jpg",
-    "static/media/PXL_20210801_011300542.jpg": "/XanderBurger/portfolio.git/static/media/PXL_20210801_011300542.74ab6d25084c88df44ab.jpg",
-    "static/media/PXL_20210615_170914779.jpg": "/XanderBurger/portfolio.git/static/media/PXL_20210615_170914779.907fbcdf2a4d992554bf.jpg",
-    "static/media/Satoshi-VariableItalic.ttf": "/XanderBurger/portfolio.git/static/media/Satoshi-VariableItalic.9519fea9567e2405bc08.ttf",
-    "static/media/Satoshi-Variable.ttf": "/XanderBurger/portfolio.git/static/media/Satoshi-Variable.536fda9b164542087fc7.ttf",
-    "index.html": "/XanderBurger/portfolio.git/index.html",
-    "main.bf44ce49.css.map": "/XanderBurger/portfolio.git/static/css/main.bf44ce49.css.map",
-    "main.0590523c.js.map": "/XanderBurger/portfolio.git/static/js/main.0590523c.js.map"
+    "main.css": "/XanderBurger/portfolio/static/css/main.8923723a.css",
+    "main.js": "/XanderBurger/portfolio/static/js/main.d2d37393.js",
+    "static/media/SevProjectCorrected70.png": "/XanderBurger/portfolio/static/media/SevProjectCorrected70.f691e858fdd4ce82de5d.png",
+    "static/media/sevSketch3.png": "/XanderBurger/portfolio/static/media/sevSketch3.61711727dcc31fa54158.png",
+    "static/media/sevSketch1.png": "/XanderBurger/portfolio/static/media/sevSketch1.a939a688dd3d322c3270.png",
+    "static/media/sevSketch2.png": "/XanderBurger/portfolio/static/media/sevSketch2.d05f1fb93e498c800ed9.png",
+    "static/media/PXL_20210615_163539239.jpg": "/XanderBurger/portfolio/static/media/PXL_20210615_163539239.3a79937d9135e3b35437.jpg",
+    "static/media/PXL_20210801_011300542.jpg": "/XanderBurger/portfolio/static/media/PXL_20210801_011300542.74ab6d25084c88df44ab.jpg",
+    "static/media/PXL_20210615_170914779.jpg": "/XanderBurger/portfolio/static/media/PXL_20210615_170914779.907fbcdf2a4d992554bf.jpg",
+    "static/media/Satoshi-VariableItalic.ttf": "/XanderBurger/portfolio/static/media/Satoshi-VariableItalic.9519fea9567e2405bc08.ttf",
+    "static/media/Satoshi-Variable.ttf": "/XanderBurger/portfolio/static/media/Satoshi-Variable.536fda9b164542087fc7.ttf",
+    "index.html": "/XanderBurger/portfolio/index.html",
+    "main.8923723a.css.map": "/XanderBurger/portfolio/static/css/main.8923723a.css.map",
+    "main.d2d37393.js.map": "/XanderBurger/portfolio/static/js/main.d2d37393.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf44ce49.css",
-    "static/js/main.0590523c.js"
+    "static/css/main.8923723a.css",
+    "static/js/main.d2d37393.js"
   ]
 }
