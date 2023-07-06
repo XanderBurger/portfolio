@@ -31,11 +31,13 @@ export default function Card({color, show, setIsShow, handleShow, i, content, ti
             return{
                 width: show ? "88%": "3%",
                 backgroundColor: color,
+                borderLeft: "solid black 1pt",
                 onRest: () => setShowContent(show ? true: false)
             }
         }else{
             return{
                 width: show ? "100%": "0%",
+                borderLeft: "none",
                 backgroundColor: color,
                 onRest: () => setShowContent(show ? true: false)
             }

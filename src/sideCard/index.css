@@ -8,6 +8,8 @@
     overflow-x: hidden;
     overflow-y: scroll;
     float: right;
+    box-sizing: border-box;
+    border-left: solid black 1pt;
   }
 
   

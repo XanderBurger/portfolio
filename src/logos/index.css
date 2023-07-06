@@ -1,0 +1,57 @@
+.logoBody{
+    padding: 45px;
+    padding-top: 35px;
+    display: grid;
+    width: 100%;
+    grid-template-areas: 
+    "header"
+    "mainPhoto"
+    "subPhotos";
+}
+
+
+.logoBody .finishedImage {
+    grid-area: mainPhoto;
+}
+
+.logoBody .finishedImage img{
+    margin-top: 35px;
+    width: 93%;
+}
+
+.logoBody .subPhotos{
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 330px) );
+}
+
+.logoBody .subPhotos > img{
+    width: 330px;
+}
+
+
+.logoBody .midText{
+    width: 70%;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+@media screen and (min-width: 550px) and (max-width: 1000px){
+    .logoBody{
+        padding: 5%;
+    }
+}
+  @media screen and (max-width: 549px){
+    .logoBody{
+        padding: 4%;
+    }
+    .logoBody .finishedImage img{
+        width: 86%;
+    }
+
+    .header .introText{
+        width: 87%;
+    }
+}
+  

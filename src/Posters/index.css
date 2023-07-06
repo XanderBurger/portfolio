@@ -1,0 +1,67 @@
+.posterBody{
+    padding: 45px;
+    padding-top: 35px;
+    display: grid;
+    width: 100%;
+    grid-template-areas: 
+    "header"
+    "mainPhoto"
+    "subPhotos";
+}
+
+
+.posterBody .finishedImage {
+    grid-area: mainPhoto;
+}
+
+.posterBody .finishedImage img{
+    margin-top: 35px;
+    width: 93%;
+}
+
+.posterBody .subPhotos{
+    margin-top: 35px;
+    display: grid;
+    width: 100%;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 330px) );
+}
+
+.posterBody .subPhotos > img{
+    max-height: 490px;
+}
+
+
+.posterBody .midText{
+    width: 70%;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+@media screen and (min-width: 550px) and (max-width: 1000px){
+    .posterBody {
+        padding: 5%;
+    }
+    
+    .posterBody .subPhotos > img{
+        max-width: 100%;
+    }
+}
+  @media screen and (max-width: 549px){
+    .posterBody{
+        padding: 4%;
+    }
+    .posterBody .finishedImage img{
+        width: 86%;
+    }
+
+    .header .introText{
+        width: 87%;
+    }
+
+    .posterBody .subPhotos > img{
+        max-width: 100%;
+    }
+}
+  

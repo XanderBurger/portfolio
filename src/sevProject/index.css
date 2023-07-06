@@ -3,6 +3,7 @@
     padding-top: 35px;
     display: grid;
     width: 100%;
+    gap: 1em;
     grid-template-areas: 
     "header"
     "mainPhoto"
@@ -24,6 +25,7 @@
 .sevBody .sketches{
     display: grid;
     width: 90%;
+    gap: 1em;
     grid-template-columns: repeat(auto-fill, minmax(300px, 330px) );
 }
 
@@ -31,8 +33,16 @@
     width: 330px;
 }
 
+.sevBody .landscapeImages {
+    display: grid;
+    width: 90%;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 330px) );
+}
+
+
 .sevBody .landscapeImages> img{
-    height:300px;
+    width: 330px;
 }
 
 .sevBody .midText{

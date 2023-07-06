@@ -13,17 +13,17 @@ export default function AboutMe() {
         <div className='sketchContainer'>
             <Sketch className="sketch" backgroundColor = {"#F9EFE1"} frameRate = {15}/>
         </div>
-            {/* <p className="aboutText">
+            <p className="aboutText">
             Currently studying Graphic Design and Computer Science at Montana State University. My work is focused on the intersection between design and code. 
             </p>
             
             <div className='contact'>
                 <h2 className='contactHeader'>CONTACT ME</h2>
                 <p className='contactText'>
-                      xanderbdesign@gmail.com
+                      xanBurger@hotmail.com
                     <br/> (406) 890-1841
                 </p>
-            </div> */}
+            </div>
             
         </div>
         <h1 className='footer'>*CLICK TO GROW*</h1>

@@ -42,4 +42,14 @@ p{
   font-family: "Satoshi-Variable";
 }
 
+img{
+  border: solid black 1pt;
+}
 
+a{
+  font-size: 25px;
+  font-family: "Satoshi-Variable";
+  font-weight: 600;
+  color: var(--black-v);
+  text-decoration: none; 
+}
