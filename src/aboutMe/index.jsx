@@ -20,8 +20,7 @@ export default function AboutMe() {
             <div className='contact'>
                 <h2 className='contactHeader'>CONTACT ME</h2>
                 <p className='contactText'>
-                      xanBurger@hotmail.com
-                    <br/> (406) 890-1841
+                      xanderbdesign@gmail.com
                 </p>
             </div>
             
